@@ -10,7 +10,7 @@ namespace AsyncBreakfast
     {
         static void Main(string[] args)
         {
-            Coffee cup = PourCoffee;
+            Func<Coffee> cup = PourCoffee;
             Console.WriteLine("coffee is ready");
 
             Egg eggs = FryEggs(2);
@@ -95,6 +95,21 @@ namespace AsyncBreakfast
     }
 
     internal class Juice
+    {
+        
+    }
+
+    internal class Egg
+    {
+        
+    }
+
+    internal class Bacon
+    {
+        
+    }
+
+    internal class Toast
     {
         
     }

@@ -39,6 +39,12 @@ namespace AsyncBreakfast
         private static Bacon FryBacon(int slices)
         {
             Console.WriteLine($"putting {slices} slices of bacon in the pan");
+            Console.WriteLine("Cooking first side of bacon...");
+            Task.Delay(3000).Wait();
+            for (int slice = 0; slice < slices; slice++)
+            {
+                Console.WriteLine("Flipping a slice of bacon...");
+            }
         }
 
     }

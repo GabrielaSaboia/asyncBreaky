@@ -8,7 +8,7 @@ namespace AsyncBreakfast
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             Func<Coffee> cup = PourCoffee;
             Console.WriteLine("coffee is ready");
